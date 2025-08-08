@@ -13,9 +13,9 @@ public class Vehicle {
 
     public String toString() {
         if (type.toLowerCase().equals("car")) {
-            return String.format("Type: Car\nModel: %s\nColor: %s\nHorsepower: %s", type, model, colour, horsepower);
+            return String.format("Type: Car\nModel: %s\nColor: %s\nHorsepower: %s", model, colour, horsepower);
         } else {
-            return String.format("Type: Truck\nModel: %s\nColor: %s\nHorsepower: %s", type, model, colour, horsepower);
+            return String.format("Type: Truck\nModel: %s\nColor: %s\nHorsepower: %s", model, colour, horsepower);
         }
     }
 
