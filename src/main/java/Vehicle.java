@@ -26,4 +26,8 @@ public class Vehicle {
     public int getHorsepower() {
         return horsepower;
     }
+
+    public String getType(){
+        return type;
+    }
 }

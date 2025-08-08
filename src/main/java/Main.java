@@ -54,7 +54,7 @@ public class Main {
         int countCars = 0;
         int countTruck = 0;
         for (int i = 0; i < vehicles.size(); i++) {
-            if ((vehicles.get(i).getModel().toLowerCase().equals("car"))) {
+            if ((vehicles.get(i).getType().equals("car"))) {
                 sumHorsepowerCar += vehicles.get(i).getHorsepower();
                 countCars++;
             } else {
@@ -68,9 +68,9 @@ public class Main {
             avgHorsepowerCar = sumHorsepowerCar / countCars;
         }
         if (countTruck != 0) {
-            avgHorsepowerTruck = sumHorsepowerTruck / countCars;
+            avgHorsepowerTruck = sumHorsepowerTruck / countTruck;
         }
-        System.out.printf("Cars have average horsepower of: %.2f./n", avgHorsepowerCar);
-        System.out.printf("Trucks have average horsepower of: %.2f./n", avgHorsepowerTruck);
+        System.out.printf("Cars have average horsepower of: %.2f.\n", avgHorsepowerCar);
+        System.out.printf("Trucks have average horsepower of: %.2f.\n", avgHorsepowerTruck);
     }
 }
